@@ -32,6 +32,11 @@ public class Bank {
     }
 
 
+    public void withdraw(double value){
+        this.balance -= value;
+        System.out.println("Updated account data: \n" + this.toString());
+    }
+
     @Override
     public String toString() {
         return "Account data: \n" + "Account: " + this.accountNumber + ", Holder: " + this.accountHolder + ", Balance: $" + this.balance;

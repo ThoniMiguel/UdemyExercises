@@ -21,5 +21,11 @@ public class App {
         System.out.println("How much do you wish to deposit?");
         double depositValue = in.nextDouble();
         b1.deposit(depositValue);
+        System.out.println("How much do you wish to withdraw?");
+        double withdrawValue = in.nextDouble();
+        b1.withdraw(withdrawValue);
+
+
+
     }
 }
