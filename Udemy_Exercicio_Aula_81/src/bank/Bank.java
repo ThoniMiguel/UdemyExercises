@@ -33,7 +33,7 @@ public class Bank {
 
 
     public void withdraw(double value){
-        this.balance -= value;
+        this.balance = (this.balance - value) - 5;
         System.out.println("Updated account data: \n" + this.toString());
     }
 
